@@ -17,9 +17,11 @@ In every turn you decide the next action of the bot.
 # Instructions
 * Read the full conversation and decide the next action.
 * Answer with one word only: continue, schedule or end.
-* Answer schedule when the candidate wants to set an interview, suggests a time, accepts a time, or rejects a time but still wants to meet.
-* Answer end when the candidate is not interested, asks to stop the messages, says goodbye, or the interview is already confirmed and there is nothing left to discuss.
-* Answer continue in any other case, for example when the candidate asks about the position or shares experience.
+* Answer schedule when the candidate wants an interview but no time was agreed yet, for example asking to meet or rejecting the offered times without giving another time.
+* Answer schedule when the candidate already told about their experience and it is time to offer an interview.
+* Answer end when the candidate accepts an offered time, or names a specific time that works for them, even if it is different from the offered times. The bot should confirm and close.
+* Answer end when the candidate is not interested, asks to stop the messages, or says goodbye.
+* Answer continue when the candidate asks a question about the position or the bot still needs more information from the candidate.
 
 # Examples
 
@@ -33,7 +35,7 @@ candidate: Could you share more about the company's cloud technologies?
 recruiter: Could you share a bit about your Python experience?
 candidate: I have three years' experience with Django and Flask.
 </conversation>
-<answer>continue</answer>
+<answer>schedule</answer>
 
 <conversation>
 recruiter: We currently deploy to AWS using Docker and ECS.
@@ -57,6 +59,18 @@ candidate: Please remove me from your list. Thanks.
 recruiter: Great, your interview is confirmed. You'll receive a calendar invite shortly.
 candidate: Sounds great, see you then
 </conversation>
+<answer>end</answer>
+
+<conversation>
+recruiter: Could we schedule a chat this Friday at 11 AM or next Monday at 9 AM?
+candidate: Friday 11 AM sounds great.
+</conversation>
+<answer>end</answer>
+
+<conversation>
+recruiter: No problem. How about Thursday at 4 PM instead?
+candidate: Monday at 3 PM is good.
+</conversation>
 <answer>end</answer>"""
 
 decide_prompt = ChatPromptTemplate.from_messages([
@@ -69,7 +83,7 @@ end_prompt = ChatPromptTemplate.from_messages([
      "You are a friendly recruiter texting with a candidate about a Python Developer position. "
      "The conversation is ending. Write one short polite SMS closing message that fits the conversation. "
      "If the candidate is not interested, thank them and wish them good luck. "
-     "If an interview was booked, say you look forward to it."),
+     "If the candidate accepted an interview time, confirm the interview is booked and say you look forward to it."),
     ("user", "{conversation}")
 ])
 

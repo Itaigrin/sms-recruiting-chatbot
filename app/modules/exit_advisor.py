@@ -17,6 +17,7 @@ Your only job is to decide if the conversation should end now or continue.
 * Answer with one word only: end or continue.
 * Answer end when the candidate is clearly not interested in the position.
 * Answer end when the candidate asks to stop receiving messages or to be removed from the list.
+* Answer end when the candidate accepted an offered interview time or named a specific time that works for them, the bot only needs to confirm and close.
 * Answer end when an interview was already confirmed and there is nothing left to discuss.
 * Answer end when the candidate says goodbye or stops cooperating.
 * Answer continue when the candidate asks questions about the position.
@@ -46,6 +47,18 @@ candidate: Sounds great, see you then
 <conversation>
 recruiter: How about next Thursday?
 candidate: I will be in touch, please stop texting me
+</conversation>
+<answer>end</answer>
+
+<conversation>
+recruiter: Could we schedule a chat this Friday at 11 AM or next Monday at 9 AM?
+candidate: Friday 11 AM sounds great.
+</conversation>
+<answer>end</answer>
+
+<conversation>
+recruiter: No problem. How about Thursday at 4 PM instead?
+candidate: Monday at 3 PM is good.
 </conversation>
 <answer>end</answer>
 
