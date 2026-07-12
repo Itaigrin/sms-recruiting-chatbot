@@ -30,7 +30,7 @@
         "turn_id": 4,
         "speaker": "candidate",
         "timestamp_utc": "2024-04-03T15:15:33Z",
-        "text": "I can't at that time—I'm busy.",
+        "text": "I can't at that time-I'm busy.",
         "label": null
       },
       {
@@ -108,7 +108,7 @@
         "turn_id": 7,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-30T11:28:06Z",
-        "text": "Understood—what about next Tuesday at 10 AM?",
+        "text": "Understood-what about next Tuesday at 10 AM?",
         "label": "schedule"
       },
       {
@@ -194,7 +194,7 @@
         "turn_id": 1,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-28T11:13:00Z",
-        "text": "Hello! I saw your application for the Python Developer position—how long have you been working with Python?",
+        "text": "Hello! I saw your application for the Python Developer position-how long have you been working with Python?",
         "label": "continue"
       },
       {
@@ -279,7 +279,7 @@
         "turn_id": 5,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-26T12:46:47Z",
-        "text": "No worries—I appreciate the update. Take care!",
+        "text": "No worries-I appreciate the update. Take care!",
         "label": "end"
       }
     ]
@@ -294,7 +294,7 @@
         "turn_id": 1,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-16T16:45:00Z",
-        "text": "Hello! I saw your application for the Python Developer position—how long have you been working with Python?",
+        "text": "Hello! I saw your application for the Python Developer position-how long have you been working with Python?",
         "label": "continue"
       },
       {
@@ -322,7 +322,7 @@
         "turn_id": 5,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-16T16:49:14Z",
-        "text": "Fantastic. I've booked the interview—see you then!",
+        "text": "Fantastic. I've booked the interview-see you then!",
         "label": "end"
       }
     ]
@@ -337,7 +337,7 @@
         "turn_id": 1,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-12T12:15:00Z",
-        "text": "Hello! I saw your application for the Python Developer position—how long have you been working with Python?",
+        "text": "Hello! I saw your application for the Python Developer position-how long have you been working with Python?",
         "label": "continue"
       },
       {
@@ -365,7 +365,7 @@
         "turn_id": 5,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-12T12:20:58Z",
-        "text": "Understood—what about next Tuesday at 10 AM?",
+        "text": "Understood-what about next Tuesday at 10 AM?",
         "label": "schedule"
       },
       {
@@ -394,7 +394,7 @@
         "turn_id": 1,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-03T12:49:00Z",
-        "text": "Hello! I saw your application for the Python Developer position—how long have you been working with Python?",
+        "text": "Hello! I saw your application for the Python Developer position-how long have you been working with Python?",
         "label": "continue"
       },
       {
@@ -422,7 +422,7 @@
         "turn_id": 5,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-03T12:54:58Z",
-        "text": "Understood—what about next Tuesday at 10 AM?",
+        "text": "Understood-what about next Tuesday at 10 AM?",
         "label": "schedule"
       },
       {
@@ -522,7 +522,7 @@
         "turn_id": 1,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-27T13:30:00Z",
-        "text": "Hello! I saw your application for the Python Developer position—how long have you been working with Python?",
+        "text": "Hello! I saw your application for the Python Developer position-how long have you been working with Python?",
         "label": "continue"
       },
       {
@@ -564,7 +564,7 @@
         "turn_id": 7,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-27T13:34:09Z",
-        "text": "Fantastic. I've booked the interview—see you then!",
+        "text": "Fantastic. I've booked the interview-see you then!",
         "label": "end"
       }
     ]
@@ -707,7 +707,7 @@
         "turn_id": 1,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-25T15:39:00Z",
-        "text": "Hello! I saw your application for the Python Developer position—how long have you been working with Python?",
+        "text": "Hello! I saw your application for the Python Developer position-how long have you been working with Python?",
         "label": "continue"
       },
       {
@@ -735,7 +735,7 @@
         "turn_id": 5,
         "speaker": "recruiter",
         "timestamp_utc": "2024-04-25T15:44:13Z",
-        "text": "No worries—I appreciate the update. Take care!",
+        "text": "No worries-I appreciate the update. Take care!",
         "label": "end"
       }
     ]
@@ -771,7 +771,7 @@
         "turn_id": 4,
         "speaker": "candidate",
         "timestamp_utc": "2024-04-22T17:54:01Z",
-        "text": "I can't at that time—I'm busy.",
+        "text": "I can't at that time-I'm busy.",
         "label": null
       },
       {
