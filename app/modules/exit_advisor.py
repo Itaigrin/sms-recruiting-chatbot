@@ -95,16 +95,6 @@ def should_end(conversation):
 
 
 if __name__ == "__main__":
-    conversation_1 = """recruiter: Hi, thanks for applying to our Python Developer role. Could you share a bit about your experience?
+    conversation = """recruiter: Hi, thanks for applying to our Python Developer role. Could you share a bit about your experience?
 candidate: I have found another job, not interested anymore."""
-    print("conversation 1:", should_end(conversation_1))
-
-    conversation_2 = """recruiter: Hi, thanks for applying to our Python Developer role. Could you share a bit about your experience?
-candidate: Sure, I have four years of Python experience. What technologies do you use?"""
-    print("conversation 2:", should_end(conversation_2))
-
-    conversation_3 = """recruiter: Could we schedule a chat this Friday at 11 AM?
-candidate: Friday works. Thanks!
-recruiter: Excellent, the slot is reserved. Looking forward to speaking with you!
-candidate: Perfect, see you then."""
-    print("conversation 3:", should_end(conversation_3))
+    print(should_end(conversation))

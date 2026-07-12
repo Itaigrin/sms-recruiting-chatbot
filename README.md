@@ -6,7 +6,7 @@
 <h1 align="center">SMS Recruiting Chatbot</h1>
 
 <p align="center">
-  A GenAI multi-agent chatbot that interviews Python Developer candidates over SMS<br>
+  Final project for the GenAI course - an SMS chatbot for Python Developer job candidates<br>
   <a href="#usage">View Demo</a>
   ·
   <a href="#usage">Report Bug</a>
@@ -59,13 +59,12 @@ The proof of concept runs in Streamlit instead of real SMS.
 
 ## Features
 
-- [x] Multi-agent orchestration (Main Agent + 3 Advisors)
-- [x] Prompt Engineering with few-shot examples for the Exit Advisor
-- [x] Job description PDF embedded into a Chroma vector database
-- [x] Function calling to a SQLite interview slots database
-- [x] Understands natural dates like "next Friday" or "tomorrow morning"
-- [x] Streamlit chat UI as an SMS proof of concept
-- [x] Evaluation with Accuracy and Confusion Matrix on labeled conversations
+- [x] Main Agent + 3 advisor agents (Exit, Scheduling, Info)
+- [x] Prompt engineering with few-shot examples
+- [x] Chroma vector database for the job description PDF
+- [x] Function calling to a SQLite database with interview slots
+- [x] Streamlit chat app as a proof of concept
+- [x] Evaluation with Accuracy and Confusion Matrix
 - [ ] Deployment to Streamlit Community Cloud _(coming soon!)_
 
 ---
@@ -163,15 +162,6 @@ def chatbot_turn(history, user_message):
     else:
         reply = answer_question(user_message, conversation)
     return action, reply
-```
-
-The Scheduling Advisor uses function calling to query the database:
-
-```python
-@tool
-def get_available_slots(from_date: str) -> list:
-    """Return the 3 nearest available interview slots for the Python Dev position."""
-    ...
 ```
 
 ---
